@@ -1,0 +1,12 @@
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\bin\Debug\halimProject.exe.config
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\bin\Debug\halimProject.exe
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\bin\Debug\halimProject.pdb
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.csprojResolveAssemblyReference.cache
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.Properties.Resources.resources
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.csproj.GenerateResource.Cache
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.exe
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.pdb
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.PersonalList.resources
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddCarpet.resources
+c:\users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddSallers.resources
+C:\Users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddScreen.resources
