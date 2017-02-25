@@ -132,7 +132,7 @@
             this.dateTimeBegin.Name = "dateTimeBegin";
             this.dateTimeBegin.Size = new System.Drawing.Size(100, 20);
             this.dateTimeBegin.TabIndex = 31;
-            this.dateTimeBegin.Value = new System.DateTime(2017, 2, 24, 0, 0, 0, 0);
+            this.dateTimeBegin.Value = new System.DateTime(2003, 2, 24, 0, 0, 0, 0);
             // 
             // label5
             // 
