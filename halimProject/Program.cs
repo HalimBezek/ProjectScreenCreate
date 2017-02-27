@@ -16,7 +16,7 @@ namespace halimProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PersonalList());
+            Application.Run(new Entries());
         }
     }
 }

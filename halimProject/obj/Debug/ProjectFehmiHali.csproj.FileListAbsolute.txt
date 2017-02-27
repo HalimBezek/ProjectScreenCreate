@@ -10,3 +10,4 @@ C:\Users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj
 C:\Users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\ProjectFehmiHali.csproj.GenerateResource.Cache
 C:\Users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.exe
 C:\Users\klm\documents\visual studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.pdb
+C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.Entries.resources

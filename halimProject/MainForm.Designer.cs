@@ -45,14 +45,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.AddProduct = new System.Windows.Forms.Button();
             this.AddPerson = new System.Windows.Forms.Button();
-            this.gbAddNewRecods = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnAddNewRecord = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,7 +55,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvList)).BeginInit();
             this.panel1.SuspendLayout();
-            this.gbAddNewRecods.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlList
@@ -84,27 +75,28 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.Kapat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 364);
+            this.panel2.Location = new System.Drawing.Point(0, 338);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(952, 31);
+            this.panel2.Size = new System.Drawing.Size(952, 57);
             this.panel2.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(389, 3);
+            this.label1.Location = new System.Drawing.Point(389, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 27);
             this.label1.TabIndex = 10;
             this.label1.Text = "El Rincon De Fehmi";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Kapat
             // 
             this.Kapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Kapat.Location = new System.Drawing.Point(813, 3);
             this.Kapat.Name = "Kapat";
-            this.Kapat.Size = new System.Drawing.Size(75, 23);
+            this.Kapat.Size = new System.Drawing.Size(75, 49);
             this.Kapat.TabIndex = 9;
             this.Kapat.Text = "Kapat";
             this.Kapat.UseVisualStyleBackColor = true;
@@ -113,6 +105,7 @@
             // gvList
             // 
             this.gvList.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
+            this.gvList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gvList.BackgroundColor = System.Drawing.Color.White;
             this.gvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -130,7 +123,6 @@
             this.gvList.Name = "gvList";
             this.gvList.Size = new System.Drawing.Size(952, 395);
             this.gvList.TabIndex = 3;
-            this.gvList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ID
             // 
@@ -184,7 +176,6 @@
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.Controls.Add(this.AddProduct);
             this.panel1.Controls.Add(this.AddPerson);
-            this.panel1.Controls.Add(this.gbAddNewRecods);
             this.panel1.Controls.Add(this.btnAddNewRecord);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -203,9 +194,9 @@
             this.AddProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AddProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.AddProduct.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.AddProduct.Location = new System.Drawing.Point(813, 61);
+            this.AddProduct.Location = new System.Drawing.Point(812, 12);
             this.AddProduct.Name = "AddProduct";
-            this.AddProduct.Size = new System.Drawing.Size(113, 27);
+            this.AddProduct.Size = new System.Drawing.Size(113, 68);
             this.AddProduct.TabIndex = 24;
             this.AddProduct.Text = "Ürün Ekle ";
             this.AddProduct.UseVisualStyleBackColor = true;
@@ -216,108 +207,22 @@
             this.AddPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AddPerson.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.AddPerson.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.AddPerson.Location = new System.Drawing.Point(813, 31);
+            this.AddPerson.Location = new System.Drawing.Point(682, 12);
             this.AddPerson.Name = "AddPerson";
-            this.AddPerson.Size = new System.Drawing.Size(113, 27);
+            this.AddPerson.Size = new System.Drawing.Size(113, 68);
             this.AddPerson.TabIndex = 23;
-            this.AddPerson.Text = "AddPerson";
+            this.AddPerson.Text = "Kişi Ekle";
             this.AddPerson.UseVisualStyleBackColor = true;
             this.AddPerson.Click += new System.EventHandler(this.AddPerson_Click);
-            // 
-            // gbAddNewRecods
-            // 
-            this.gbAddNewRecods.Controls.Add(this.button1);
-            this.gbAddNewRecods.Controls.Add(this.textBox4);
-            this.gbAddNewRecods.Controls.Add(this.textBox1);
-            this.gbAddNewRecods.Controls.Add(this.comboBox2);
-            this.gbAddNewRecods.Controls.Add(this.textBox3);
-            this.gbAddNewRecods.Controls.Add(this.comboBox1);
-            this.gbAddNewRecods.Controls.Add(this.textBox2);
-            this.gbAddNewRecods.Location = new System.Drawing.Point(259, 0);
-            this.gbAddNewRecods.Name = "gbAddNewRecods";
-            this.gbAddNewRecods.Size = new System.Drawing.Size(502, 77);
-            this.gbAddNewRecods.TabIndex = 22;
-            this.gbAddNewRecods.TabStop = false;
-            this.gbAddNewRecods.Text = "Yeni Satış Ekle";
-            this.gbAddNewRecods.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(421, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Ekle";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(291, 48);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 22;
-            this.textBox4.Text = "Yapılan Ödeme";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(164, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.Text = "Satış Fiyatı";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "hjklş",
-            "jklş",
-            "bnkl"});
-            this.comboBox2.Location = new System.Drawing.Point(19, 48);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(126, 21);
-            this.comboBox2.TabIndex = 17;
-            this.comboBox2.Text = "Ürün Kodu";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(291, 16);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 21;
-            this.textBox3.Text = "Komisyon Tutarı";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "hjklş",
-            "jklş",
-            "bnkl"});
-            this.comboBox1.Location = new System.Drawing.Point(19, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(126, 21);
-            this.comboBox1.TabIndex = 15;
-            this.comboBox1.Text = "Ad Soyad";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(164, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.Text = "Adet";
             // 
             // btnAddNewRecord
             // 
             this.btnAddNewRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddNewRecord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAddNewRecord.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnAddNewRecord.Location = new System.Drawing.Point(813, 2);
+            this.btnAddNewRecord.Location = new System.Drawing.Point(553, 11);
             this.btnAddNewRecord.Name = "btnAddNewRecord";
-            this.btnAddNewRecord.Size = new System.Drawing.Size(113, 27);
+            this.btnAddNewRecord.Size = new System.Drawing.Size(113, 70);
             this.btnAddNewRecord.TabIndex = 13;
             this.btnAddNewRecord.Text = "Satış Ekle ";
             this.btnAddNewRecord.UseVisualStyleBackColor = true;
@@ -365,7 +270,6 @@
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Ara";
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // PersonalList
             // 
@@ -379,14 +283,11 @@
             this.Name = "PersonalList";
             this.ShowInTaskbar = false;
             this.Text = "Personel Listesi";
-            this.Load += new System.EventHandler(this.PersonalList_Load);
             this.pnlList.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.gbAddNewRecods.ResumeLayout(false);
-            this.gbAddNewRecods.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -404,15 +305,7 @@
         private System.Windows.Forms.Button btnAddNewRecord;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Kapat;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox gbAddNewRecods;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button AddProduct;
         private System.Windows.Forms.Button AddPerson;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;

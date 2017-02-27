@@ -42,9 +42,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(351, 272);
+            this.button2.Location = new System.Drawing.Point(351, 252);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 43);
             this.button2.TabIndex = 20;
             this.button2.Text = "İptal";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(455, 272);
+            this.button1.Location = new System.Drawing.Point(455, 252);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 43);
             this.button1.TabIndex = 11;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 97);
+            this.textBox2.Location = new System.Drawing.Point(154, 104);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 21;
@@ -129,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(559, 327);
+            this.ClientSize = new System.Drawing.Size(575, 313);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);

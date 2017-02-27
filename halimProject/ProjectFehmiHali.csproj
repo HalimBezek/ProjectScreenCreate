@@ -50,6 +50,12 @@
     <Compile Include="AddCarpet.Designer.cs">
       <DependentUpon>AddCarpet.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSale.Designer.cs">
+      <DependentUpon>AddSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddSallers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,12 @@
     <Compile Include="AddScreen.Designer.cs">
       <DependentUpon>AddScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entries.Designer.cs">
+      <DependentUpon>Entries.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,11 +85,17 @@
     <EmbeddedResource Include="AddCarpet.resx">
       <DependentUpon>AddCarpet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddSale.resx">
+      <DependentUpon>AddSale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSallers.resx">
       <DependentUpon>AddSallers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddScreen.resx">
       <DependentUpon>AddScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entries.resx">
+      <DependentUpon>Entries.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -90,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -104,6 +123,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redcarpet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redcarpet1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
