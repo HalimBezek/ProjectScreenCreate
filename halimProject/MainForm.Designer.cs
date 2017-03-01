@@ -226,7 +226,7 @@
             this.btnAddNewRecord.TabIndex = 13;
             this.btnAddNewRecord.Text = "Satış Ekle ";
             this.btnAddNewRecord.UseVisualStyleBackColor = true;
-            this.btnAddNewRecord.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnAddNewRecord.Click += new System.EventHandler(this.btnAddNewRecord_Click);
             // 
             // label3
             // 

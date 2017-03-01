@@ -22,18 +22,13 @@ namespace halimProject
             Close();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            gbAddNewRecods.Visible = true;
-
-        }
 
         private void AddPerson_Click(object sender, EventArgs e)
         {
             AddSallers frmAddSallers = new AddSallers();
 
             frmAddSallers.Show();
-            gbAddNewRecods.Visible = false;
+
         }
 
         private void AddProduct_Click(object sender, EventArgs e)
@@ -41,7 +36,13 @@ namespace halimProject
             AddCarpet frmAddCarpet = new AddCarpet();
 
             frmAddCarpet.Show();
-            gbAddNewRecods.Visible = false;
+
+        }
+
+        private void btnAddNewRecord_Click(object sender, EventArgs e)
+        {
+            AddSale frmAddSale = new AddSale();
+            frmAddSale.Show();
         }
     }
 }

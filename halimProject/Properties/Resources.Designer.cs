@@ -63,6 +63,26 @@ namespace halimProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap administrator_add {
+            get {
+                object obj = ResourceManager.GetObject("administrator_add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clothes_accessory_garment_clothing_article_item_fashion__52_128 {
+            get {
+                object obj = ResourceManager.GetObject("clothes-accessory-garment-clothing-article-item-fashion-_52-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap redcarpet {
             get {
                 object obj = ResourceManager.GetObject("redcarpet", resourceCulture);

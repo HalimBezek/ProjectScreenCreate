@@ -45,11 +45,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Khaki;
-            this.label1.Location = new System.Drawing.Point(126, 150);
+            this.label1.Location = new System.Drawing.Point(12, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 69);
+            this.label1.Size = new System.Drawing.Size(576, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "de la fehmi";
+            this.label1.Text = "El Rincon De Fehmi";
             // 
             // Entries
             // 
