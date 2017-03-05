@@ -12,3 +12,4 @@ C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\bin
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\bin\Debug\halimProject.pdb
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.exe
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.pdb
+C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.StockList.resources
