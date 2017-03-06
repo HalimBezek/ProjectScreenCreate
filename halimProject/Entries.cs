@@ -19,11 +19,15 @@ namespace halimProject
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
-
+           
+            Entries en = new Entries();
             PersonalList pl = new PersonalList();
+            en.Close();   
             pl.Show();
-            
+            timer1.Enabled = false;
+           
+
+
         }
     }
 }

@@ -52,6 +52,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Tamam";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -91,7 +92,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Name = "StockList";
-            this.Text = "StockList";
+            this.Text = "Stok Listesi";
             this.ResumeLayout(false);
             this.PerformLayout();
 
