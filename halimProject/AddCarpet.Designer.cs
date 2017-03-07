@@ -199,6 +199,7 @@
             this.Controls.Add(this.button1);
             this.Name = "AddCarpet";
             this.Text = "Ürün Ekle";
+            this.Load += new System.EventHandler(this.AddCarpet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

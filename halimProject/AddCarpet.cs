@@ -31,5 +31,10 @@ namespace halimProject
         {
 
         }
+
+        private void AddCarpet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

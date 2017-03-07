@@ -15,7 +15,7 @@ namespace halimProject
     public partial class PersonalList : Form
     {
         String bag;
-        static MySqlConnection baglanti;
+       
         public PersonalList()
         {
             InitializeComponent();
@@ -57,37 +57,9 @@ namespace halimProject
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            baglanti = new MySqlConnection(bag);
-            String sql = "SELECT * FROM tablo1";
-            DataTable dt = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand();
-
-            command.CommandText = sql;
-            command.Connection = baglanti;
-            adapter.SelectCommand = command;
-
-            baglanti.Open();
-            MessageBox.Show("database açık");   
-            // adapter.Fill(dt);
-           // dataGridView1.DataSource = dt;
+           // SQL s = new SQL();
+           
         }
 
-        private void PersonalList_Load(object sender, EventArgs e)
-        {
-            
-            MySqlConnectionStringBuilder build = new MySqlConnectionStringBuilder();
-
-            build.UserID = "root";
-            build.Password = "12345678";
-            build.Database = "denemeveritabanı";
-            build.Server = "localhost";
-
-            bag = build.ToString();
-            baglanti = new MySqlConnection(bag);
-
-
-        }
     }
 }

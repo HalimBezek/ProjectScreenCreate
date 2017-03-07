@@ -299,7 +299,6 @@
             this.Name = "PersonalList";
             this.ShowInTaskbar = false;
             this.Text = "Personel Listesi";
-            this.Load += new System.EventHandler(this.PersonalList_Load);
             this.pnlList.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvList)).EndInit();
