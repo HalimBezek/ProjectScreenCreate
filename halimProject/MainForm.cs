@@ -57,8 +57,16 @@ namespace halimProject
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-           // SQL s = new SQL();
-           
+            SqlClass sqlCon = new SqlClass();
+            sqlCon.ListData(dgvPersonList);
+            
+        }
+
+        private void PersonalList_Load(object sender, EventArgs e)
+        {
+            SqlClass sqlCon = new SqlClass();
+            sqlCon.ConnectSql();
+            MessageBox.Show("bağlandı");
         }
 
     }

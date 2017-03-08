@@ -6,7 +6,6 @@ C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.Entries.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.PersonalList.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.Properties.Resources.resources
-C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.SQL.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.StockList.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\ProjectFehmiHali.csproj.GenerateResource.Cache
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\bin\Debug\halimProject.exe.config
