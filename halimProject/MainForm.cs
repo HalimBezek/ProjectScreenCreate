@@ -29,6 +29,9 @@ namespace halimProject
 
         private void AddPerson_Click(object sender, EventArgs e)
         {
+
+
+
             AddSallers frmAddSallers = new AddSallers();
 
             frmAddSallers.Show();
@@ -59,6 +62,7 @@ namespace halimProject
         {
             SqlClass sqlCon = new SqlClass();
             sqlCon.ListData(dgvPersonList);
+            
             
         }
 

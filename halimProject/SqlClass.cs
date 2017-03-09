@@ -24,7 +24,7 @@ namespace halimProject
 
             build.UserID = "root";
             build.Password = "12345678";
-            build.Database = "denemeveritabanı";
+            build.Database = "carpet_shop";
             build.Server = "localhost";
 
             bag = build.ToString();
@@ -35,7 +35,7 @@ namespace halimProject
         public void ListData(DataGridView DataGridList)
         {
             ConnectSql();
-            String sql = "SELECT * FROM tablo1";
+            String sql = "SELECT * FROM person_list";
             DataTable dt = new DataTable();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -50,5 +50,27 @@ namespace halimProject
             DataGridList.DataSource = dt;
           
         }
+
+       public void AddSallers(String tbName,String tbSurname,String tbDepartment,String tbDegree,String dtStartDate)
+        {
+            ConnectSql();
+            baglanti.Open();
+            string sql = "INSERT INTO person_list (NAME, SURNAME, DEPARTMAN_NAME, TITLE, START_DATE) VALUES ('" + tbName + "','" + tbSurname +
+                                               "','" + tbDepartment + "','" + tbDegree + "','" + dtStartDate + "')";
+
+               
+            MySqlCommand komut = new MySqlCommand(sql,baglanti);
+ 
+            komut.CommandText = sql;
+            komut.Connection = baglanti;
+ 
+            
+            komut.ExecuteNonQuery(); //ExecuteNonQuery();
+            baglanti.Close();
+
+           
+        }
+
+
     }
 }

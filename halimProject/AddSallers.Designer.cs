@@ -32,13 +32,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbDegree = new System.Windows.Forms.TextBox();
+            this.tbSurname = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimeBegin = new System.Windows.Forms.DateTimePicker();
+            this.tbDepartment = new System.Windows.Forms.TextBox();
+            this.dtStartDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,26 +82,26 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Adı :";
             // 
-            // textBox5
+            // tbDegree
             // 
-            this.textBox5.Location = new System.Drawing.Point(425, 140);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 24;
+            this.tbDegree.Location = new System.Drawing.Point(425, 140);
+            this.tbDegree.Name = "tbDegree";
+            this.tbDegree.Size = new System.Drawing.Size(100, 20);
+            this.tbDegree.TabIndex = 24;
             // 
-            // textBox4
+            // tbSurname
             // 
-            this.textBox4.Location = new System.Drawing.Point(171, 182);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 23;
+            this.tbSurname.Location = new System.Drawing.Point(171, 182);
+            this.tbSurname.Name = "tbSurname";
+            this.tbSurname.Size = new System.Drawing.Size(100, 20);
+            this.tbSurname.TabIndex = 23;
             // 
-            // textBox1
+            // tbName
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
+            this.tbName.Location = new System.Drawing.Point(171, 140);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(100, 20);
+            this.tbName.TabIndex = 22;
             // 
             // button1
             // 
@@ -111,6 +111,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -121,20 +122,21 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "Çalıştığı Bölüm :";
             // 
-            // textBox2
+            // tbDepartment
             // 
-            this.textBox2.Location = new System.Drawing.Point(425, 182);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 29;
+            this.tbDepartment.Location = new System.Drawing.Point(425, 182);
+            this.tbDepartment.Name = "tbDepartment";
+            this.tbDepartment.Size = new System.Drawing.Size(100, 20);
+            this.tbDepartment.TabIndex = 29;
             // 
-            // dateTimeBegin
+            // dtStartDate
             // 
-            this.dateTimeBegin.Location = new System.Drawing.Point(425, 96);
-            this.dateTimeBegin.Name = "dateTimeBegin";
-            this.dateTimeBegin.Size = new System.Drawing.Size(100, 20);
-            this.dateTimeBegin.TabIndex = 31;
-            this.dateTimeBegin.Value = new System.DateTime(2003, 2, 24, 0, 0, 0, 0);
+            this.dtStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtStartDate.Location = new System.Drawing.Point(425, 96);
+            this.dtStartDate.Name = "dtStartDate";
+            this.dtStartDate.Size = new System.Drawing.Size(100, 20);
+            this.dtStartDate.TabIndex = 31;
+            this.dtStartDate.Value = new System.DateTime(2003, 2, 24, 0, 0, 0, 0);
             // 
             // label5
             // 
@@ -162,16 +164,16 @@
             this.ClientSize = new System.Drawing.Size(538, 310);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimeBegin);
+            this.Controls.Add(this.dtStartDate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbDepartment);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbDegree);
+            this.Controls.Add(this.tbSurname);
+            this.Controls.Add(this.tbName);
             this.Controls.Add(this.button1);
             this.Name = "AddSallers";
             this.Text = "Personel Ekle";
@@ -187,13 +189,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbDegree;
+        private System.Windows.Forms.TextBox tbSurname;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimeBegin;
+        private System.Windows.Forms.TextBox tbDepartment;
+        private System.Windows.Forms.DateTimePicker dtStartDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

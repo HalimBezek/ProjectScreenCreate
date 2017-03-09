@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlList = new System.Windows.Forms.Panel();
+            this.dgvPersonList = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Kapat = new System.Windows.Forms.Button();
@@ -42,11 +43,14 @@
             this.dateTimeEnd = new System.Windows.Forms.DateTimePicker();
             this.dateTimeBegin = new System.Windows.Forms.DateTimePicker();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.dgvPersonList = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonList)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonList)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlList
@@ -61,6 +65,23 @@
             this.pnlList.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnlList.Size = new System.Drawing.Size(952, 395);
             this.pnlList.TabIndex = 3;
+            // 
+            // dgvPersonList
+            // 
+            this.dgvPersonList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.dgvPersonList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dgvPersonList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPersonList.GridColor = System.Drawing.SystemColors.Window;
+            this.dgvPersonList.Location = new System.Drawing.Point(0, 0);
+            this.dgvPersonList.Name = "dgvPersonList";
+            this.dgvPersonList.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvPersonList.Size = new System.Drawing.Size(952, 338);
+            this.dgvPersonList.TabIndex = 16;
             // 
             // panel2
             // 
@@ -210,14 +231,25 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // dgvPersonList
+            // Column1
             // 
-            this.dgvPersonList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPersonList.Location = new System.Drawing.Point(0, 0);
-            this.dgvPersonList.Name = "dgvPersonList";
-            this.dgvPersonList.Size = new System.Drawing.Size(952, 338);
-            this.dgvPersonList.TabIndex = 16;
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
             // 
             // PersonalList
             // 
@@ -233,10 +265,10 @@
             this.Text = "Personel Listesi";
             this.Load += new System.EventHandler(this.PersonalList_Load);
             this.pnlList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonList)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -258,6 +290,10 @@
         private System.Windows.Forms.Button AddPerson;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvPersonList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
 
