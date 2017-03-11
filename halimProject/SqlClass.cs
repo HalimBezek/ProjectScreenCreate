@@ -51,18 +51,18 @@ namespace halimProject
           
         }
 
-       public void AddSallers(String tbName,String tbSurname,String tbDepartment,String tbDegree,String dtStartDate)
+       public void AddSallers(String Name,String Surname,String Department,String Degree,String StartDate)
         {
             ConnectSql();
             baglanti.Open();
-            string sql = "INSERT INTO person_list (NAME, SURNAME, DEPARTMAN_NAME, TITLE, START_DATE) VALUES ('" + tbName + "','" + tbSurname +
-                                               "','" + tbDepartment + "','" + tbDegree + "','" + dtStartDate + "')";
+            string sql = "INSERT INTO person_list (NAME, SURNAME, DEPARTMAN_NAME, TITLE, START_DATE) VALUES ('" + Name + "','" + Surname +
+                                               "','" + Department + "','" + Degree + "','" + StartDate + "')";
 
                
             MySqlCommand komut = new MySqlCommand(sql,baglanti);
  
-            komut.CommandText = sql;
-            komut.Connection = baglanti;
+            //komut.CommandText = sql;
+            //komut.Connection = baglanti;
  
             
             komut.ExecuteNonQuery(); //ExecuteNonQuery();
@@ -70,6 +70,44 @@ namespace halimProject
 
            
         }
+
+
+       public void AddCarpet(int Category,String Name,String Pieces,String Degree,String Code)
+       {
+           ConnectSql();
+           baglanti.Open();
+           string sql = null;  //="INSERT INTO carpet_list (NAME, SURNAME, DEPARTMAN_NAME, TITLE, START_DATE) VALUES ('" + tbName + "','" + tbSurname +
+           //                                   "','" + tbDepartment + "','" + tbDegree + "','" + dtStartDate + "')";
+
+
+           MySqlCommand komut = new MySqlCommand();
+
+           komut.CommandText = sql;
+           komut.Connection = baglanti;
+
+
+           komut.ExecuteNonQuery(); //ExecuteNonQuery();
+           baglanti.Close();
+
+
+       }
+       public void AddCategory(String CategoryName)
+       {
+           ConnectSql();
+
+           baglanti.Open();
+           String Sql= null;
+
+           MySqlCommand komut = new MySqlCommand();
+
+           komut.CommandText = Sql;
+           komut.Connection = baglanti;
+
+           komut.ExecuteNonQuery();
+           baglanti.Close();
+        
+       }
+
 
 
     }

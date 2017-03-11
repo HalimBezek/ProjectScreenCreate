@@ -22,11 +22,11 @@ namespace halimProject
            
             Entries en = new Entries();
             PersonalList pl = new PersonalList();
-            en.Close();   
+             
             pl.Show();
-            timer1.Enabled = false;
-           
 
+            timer1.Enabled = false;
+            en.Close();  
 
         }
     }

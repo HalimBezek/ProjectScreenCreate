@@ -36,5 +36,18 @@ namespace halimProject
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlClass sqlConn = new SqlClass();
+            sqlConn.AddCarpet(cbCategory.TabIndex, txbName.Text, txbPieces.Text, txbDegree.Text,txbCode.Text);
+        }
+
+        private void btnAddNewCat_Click(object sender, EventArgs e)
+        {
+            SqlClass sqlConn = new SqlClass();
+            sqlConn.AddCategory(txbCtName.Text);
+
+        }
     }
 }

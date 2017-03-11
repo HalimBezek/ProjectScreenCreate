@@ -71,6 +71,9 @@ namespace halimProject
             SqlClass sqlCon = new SqlClass();
             sqlCon.ConnectSql();
             MessageBox.Show("bağlandı");
+
+            Entries entry = new Entries();
+            entry.Close();
         }
 
     }

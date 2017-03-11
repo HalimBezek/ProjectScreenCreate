@@ -10,8 +10,6 @@ namespace halimProject
 {
     static class Program
     {
-       static MySqlConnection baglanti;
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
