@@ -66,12 +66,6 @@
     <Compile Include="AddSallers.Designer.cs">
       <DependentUpon>AddSallers.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddScreen.Designer.cs">
-      <DependentUpon>AddScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Entries.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,9 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddSallers.resx">
       <DependentUpon>AddSallers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddScreen.resx">
-      <DependentUpon>AddScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Entries.resx">
       <DependentUpon>Entries.cs</DependentUpon>

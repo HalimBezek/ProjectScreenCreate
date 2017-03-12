@@ -41,9 +41,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txbCtName = new System.Windows.Forms.TextBox();
             this.btnAddNewCat = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,7 +150,8 @@
             this.cbCategory.Location = new System.Drawing.Point(430, 82);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(115, 21);
-            this.cbCategory.TabIndex = 29;
+            this.cbCategory.TabIndex = 1;
+            this.cbCategory.Tag = "1";
             // 
             // groupBox1
             // 
@@ -163,6 +164,15 @@
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Yeni Kategori Ekle";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Adı :";
             // 
             // txbCtName
             // 
@@ -180,15 +190,6 @@
             this.btnAddNewCat.Text = "Ekle";
             this.btnAddNewCat.UseVisualStyleBackColor = true;
             this.btnAddNewCat.Click += new System.EventHandler(this.btnAddNewCat_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Adı :";
             // 
             // AddCarpet
             // 
@@ -211,7 +212,6 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "AddCarpet";
             this.Text = "Ürün Ekle";
-            this.Load += new System.EventHandler(this.AddCarpet_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

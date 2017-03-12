@@ -2,7 +2,6 @@ C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddCarpet.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddSale.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddSallers.resources
-C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.AddScreen.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.Entries.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.PersonalList.resources
 C:\Users\klm\Documents\Visual Studio 2013\Projects\halimProject\halimProject\obj\Debug\halimProject.Properties.Resources.resources

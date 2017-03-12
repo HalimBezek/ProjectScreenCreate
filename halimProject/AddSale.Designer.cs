@@ -29,67 +29,88 @@
         private void InitializeComponent()
         {
             this.gbAddNewRecods = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txbKK_KOMISYON = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txbPAYED_TYPE = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txbPAYMENT = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txbCUS_EXPENSE = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txbSALES_PIECES = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txbCARGO_PRICE = new System.Windows.Forms.TextBox();
+            this.txbSALE_PRICE = new System.Windows.Forms.TextBox();
+            this.cmbPrd_Code = new System.Windows.Forms.ComboBox();
+            this.txbKOMISYON_AMOUNT = new System.Windows.Forms.TextBox();
+            this.cmbWhoSaller = new System.Windows.Forms.ComboBox();
+            this.txbWHOSE_COSTUMER = new System.Windows.Forms.TextBox();
+            this.btnAddSale = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.gbAddNewRecods.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbAddNewRecods
             // 
             this.gbAddNewRecods.Controls.Add(this.label12);
-            this.gbAddNewRecods.Controls.Add(this.comboBox3);
+            this.gbAddNewRecods.Controls.Add(this.cmbCategory);
             this.gbAddNewRecods.Controls.Add(this.label11);
-            this.gbAddNewRecods.Controls.Add(this.textBox9);
+            this.gbAddNewRecods.Controls.Add(this.txbKK_KOMISYON);
             this.gbAddNewRecods.Controls.Add(this.label10);
-            this.gbAddNewRecods.Controls.Add(this.textBox8);
+            this.gbAddNewRecods.Controls.Add(this.txbPAYED_TYPE);
             this.gbAddNewRecods.Controls.Add(this.label9);
-            this.gbAddNewRecods.Controls.Add(this.textBox7);
+            this.gbAddNewRecods.Controls.Add(this.txbPAYMENT);
             this.gbAddNewRecods.Controls.Add(this.label8);
-            this.gbAddNewRecods.Controls.Add(this.textBox6);
+            this.gbAddNewRecods.Controls.Add(this.txbCUS_EXPENSE);
             this.gbAddNewRecods.Controls.Add(this.label7);
-            this.gbAddNewRecods.Controls.Add(this.textBox5);
+            this.gbAddNewRecods.Controls.Add(this.txbSALES_PIECES);
             this.gbAddNewRecods.Controls.Add(this.label6);
             this.gbAddNewRecods.Controls.Add(this.label5);
             this.gbAddNewRecods.Controls.Add(this.label4);
             this.gbAddNewRecods.Controls.Add(this.label2);
             this.gbAddNewRecods.Controls.Add(this.label1);
             this.gbAddNewRecods.Controls.Add(this.label3);
-            this.gbAddNewRecods.Controls.Add(this.textBox4);
-            this.gbAddNewRecods.Controls.Add(this.textBox1);
-            this.gbAddNewRecods.Controls.Add(this.comboBox2);
-            this.gbAddNewRecods.Controls.Add(this.textBox3);
-            this.gbAddNewRecods.Controls.Add(this.comboBox1);
-            this.gbAddNewRecods.Controls.Add(this.textBox2);
+            this.gbAddNewRecods.Controls.Add(this.txbCARGO_PRICE);
+            this.gbAddNewRecods.Controls.Add(this.txbSALE_PRICE);
+            this.gbAddNewRecods.Controls.Add(this.cmbPrd_Code);
+            this.gbAddNewRecods.Controls.Add(this.txbKOMISYON_AMOUNT);
+            this.gbAddNewRecods.Controls.Add(this.cmbWhoSaller);
+            this.gbAddNewRecods.Controls.Add(this.txbWHOSE_COSTUMER);
             this.gbAddNewRecods.Location = new System.Drawing.Point(12, 21);
             this.gbAddNewRecods.Name = "gbAddNewRecods";
             this.gbAddNewRecods.Size = new System.Drawing.Size(599, 325);
             this.gbAddNewRecods.TabIndex = 23;
             this.gbAddNewRecods.TabStop = false;
             this.gbAddNewRecods.Text = "Yeni Satış Ekle";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(80, 13);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "Kategori Seç   :";
+            // 
+            // cmbCategory
+            // 
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Items.AddRange(new object[] {
+            "hjklş",
+            "jklş",
+            "bnkl"});
+            this.cmbCategory.Location = new System.Drawing.Point(16, 60);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(126, 21);
+            this.cmbCategory.TabIndex = 1;
             // 
             // label11
             // 
@@ -100,12 +121,12 @@
             this.label11.TabIndex = 38;
             this.label11.Text = "Kredi Kartı Komisyonu :";
             // 
-            // textBox9
+            // txbKK_KOMISYON
             // 
-            this.textBox9.Location = new System.Drawing.Point(328, 131);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(126, 20);
-            this.textBox9.TabIndex = 37;
+            this.txbKK_KOMISYON.Location = new System.Drawing.Point(328, 131);
+            this.txbKK_KOMISYON.Name = "txbKK_KOMISYON";
+            this.txbKK_KOMISYON.Size = new System.Drawing.Size(126, 20);
+            this.txbKK_KOMISYON.TabIndex = 37;
             // 
             // label10
             // 
@@ -116,28 +137,28 @@
             this.label10.TabIndex = 36;
             this.label10.Text = "Satış Tipi  :";
             // 
-            // textBox8
+            // txbPAYED_TYPE
             // 
-            this.textBox8.Location = new System.Drawing.Point(172, 131);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(126, 20);
-            this.textBox8.TabIndex = 35;
+            this.txbPAYED_TYPE.Location = new System.Drawing.Point(172, 131);
+            this.txbPAYED_TYPE.Name = "txbPAYED_TYPE";
+            this.txbPAYED_TYPE.Size = new System.Drawing.Size(126, 20);
+            this.txbPAYED_TYPE.TabIndex = 35;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(319, 239);
+            this.label9.Location = new System.Drawing.Point(325, 239);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 13);
             this.label9.TabIndex = 34;
             this.label9.Text = "Yapılan Ödeme  :";
             // 
-            // textBox7
+            // txbPAYMENT
             // 
-            this.textBox7.Location = new System.Drawing.Point(322, 267);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(126, 20);
-            this.textBox7.TabIndex = 33;
+            this.txbPAYMENT.Location = new System.Drawing.Point(328, 267);
+            this.txbPAYMENT.Name = "txbPAYMENT";
+            this.txbPAYMENT.Size = new System.Drawing.Size(126, 20);
+            this.txbPAYMENT.TabIndex = 33;
             // 
             // label8
             // 
@@ -148,12 +169,12 @@
             this.label8.TabIndex = 32;
             this.label8.Text = "Müşteri Gideri :";
             // 
-            // textBox6
+            // txbCUS_EXPENSE
             // 
-            this.textBox6.Location = new System.Drawing.Point(16, 267);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(126, 20);
-            this.textBox6.TabIndex = 31;
+            this.txbCUS_EXPENSE.Location = new System.Drawing.Point(16, 267);
+            this.txbCUS_EXPENSE.Name = "txbCUS_EXPENSE";
+            this.txbCUS_EXPENSE.Size = new System.Drawing.Size(126, 20);
+            this.txbCUS_EXPENSE.TabIndex = 31;
             // 
             // label7
             // 
@@ -164,17 +185,17 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "Satış Adedi         :";
             // 
-            // textBox5
+            // txbSALES_PIECES
             // 
-            this.textBox5.Location = new System.Drawing.Point(16, 199);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(126, 20);
-            this.textBox5.TabIndex = 29;
+            this.txbSALES_PIECES.Location = new System.Drawing.Point(16, 199);
+            this.txbSALES_PIECES.Name = "txbSALES_PIECES";
+            this.txbSALES_PIECES.Size = new System.Drawing.Size(126, 20);
+            this.txbSALES_PIECES.TabIndex = 29;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(163, 239);
+            this.label6.Location = new System.Drawing.Point(169, 239);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 28;
@@ -201,7 +222,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(319, 26);
+            this.label2.Location = new System.Drawing.Point(325, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 25;
@@ -219,103 +240,83 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 26);
+            this.label3.Location = new System.Drawing.Point(169, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 23;
             this.label3.Text = "Satışı Yapan     :";
             // 
-            // textBox4
+            // txbCARGO_PRICE
             // 
-            this.textBox4.Location = new System.Drawing.Point(166, 267);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(126, 20);
-            this.textBox4.TabIndex = 22;
+            this.txbCARGO_PRICE.Location = new System.Drawing.Point(172, 267);
+            this.txbCARGO_PRICE.Name = "txbCARGO_PRICE";
+            this.txbCARGO_PRICE.Size = new System.Drawing.Size(126, 20);
+            this.txbCARGO_PRICE.TabIndex = 22;
             // 
-            // textBox1
+            // txbSALE_PRICE
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 199);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 19;
+            this.txbSALE_PRICE.Location = new System.Drawing.Point(172, 199);
+            this.txbSALE_PRICE.Name = "txbSALE_PRICE";
+            this.txbSALE_PRICE.Size = new System.Drawing.Size(126, 20);
+            this.txbSALE_PRICE.TabIndex = 19;
             // 
-            // comboBox2
+            // cmbPrd_Code
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbPrd_Code.FormattingEnabled = true;
+            this.cmbPrd_Code.Items.AddRange(new object[] {
             "hjklş",
             "jklş",
             "bnkl"});
-            this.comboBox2.Location = new System.Drawing.Point(16, 130);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(126, 21);
-            this.comboBox2.TabIndex = 17;
+            this.cmbPrd_Code.Location = new System.Drawing.Point(16, 130);
+            this.cmbPrd_Code.Name = "cmbPrd_Code";
+            this.cmbPrd_Code.Size = new System.Drawing.Size(126, 21);
+            this.cmbPrd_Code.TabIndex = 17;
             // 
-            // textBox3
+            // txbKOMISYON_AMOUNT
             // 
-            this.textBox3.Location = new System.Drawing.Point(328, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(126, 20);
-            this.textBox3.TabIndex = 21;
+            this.txbKOMISYON_AMOUNT.Location = new System.Drawing.Point(328, 199);
+            this.txbKOMISYON_AMOUNT.Name = "txbKOMISYON_AMOUNT";
+            this.txbKOMISYON_AMOUNT.Size = new System.Drawing.Size(126, 20);
+            this.txbKOMISYON_AMOUNT.TabIndex = 21;
             // 
-            // comboBox1
+            // cmbWhoSaller
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbWhoSaller.FormattingEnabled = true;
+            this.cmbWhoSaller.Items.AddRange(new object[] {
             "hjklş",
             "jklş",
             "bnkl"});
-            this.comboBox1.Location = new System.Drawing.Point(166, 59);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(126, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cmbWhoSaller.Location = new System.Drawing.Point(172, 59);
+            this.cmbWhoSaller.Name = "cmbWhoSaller";
+            this.cmbWhoSaller.Size = new System.Drawing.Size(126, 21);
+            this.cmbWhoSaller.TabIndex = 15;
             // 
-            // textBox2
+            // txbWHOSE_COSTUMER
             // 
-            this.textBox2.Location = new System.Drawing.Point(322, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 20);
-            this.textBox2.TabIndex = 20;
+            this.txbWHOSE_COSTUMER.Location = new System.Drawing.Point(328, 59);
+            this.txbWHOSE_COSTUMER.Name = "txbWHOSE_COSTUMER";
+            this.txbWHOSE_COSTUMER.Size = new System.Drawing.Size(126, 20);
+            this.txbWHOSE_COSTUMER.TabIndex = 20;
             // 
-            // button1
+            // btnAddSale
             // 
-            this.button1.Location = new System.Drawing.Point(544, 379);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(72, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddSale.Location = new System.Drawing.Point(544, 379);
+            this.btnAddSale.Name = "btnAddSale";
+            this.btnAddSale.Size = new System.Drawing.Size(72, 44);
+            this.btnAddSale.TabIndex = 23;
+            this.btnAddSale.Text = "Ekle";
+            this.btnAddSale.UseVisualStyleBackColor = true;
+            this.btnAddSale.Click += new System.EventHandler(this.btnAddSale_Click);
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Location = new System.Drawing.Point(455, 379);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 44);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "İptal";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 27);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 13);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "Kategori Seç   :";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "hjklş",
-            "jklş",
-            "bnkl"});
-            this.comboBox3.Location = new System.Drawing.Point(16, 60);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(126, 21);
-            this.comboBox3.TabIndex = 39;
+            this.btnCancel.Location = new System.Drawing.Point(455, 379);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(72, 44);
+            this.btnCancel.TabIndex = 29;
+            this.btnCancel.Text = "İptal";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
             // 
             // AddSale
             // 
@@ -323,8 +324,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(644, 435);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnAddSale);
             this.Controls.Add(this.gbAddNewRecods);
             this.Name = "AddSale";
             this.Text = "Satış Ekle";
@@ -337,31 +338,31 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbAddNewRecods;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnAddSale;
+        private System.Windows.Forms.TextBox txbCARGO_PRICE;
+        private System.Windows.Forms.TextBox txbSALE_PRICE;
+        private System.Windows.Forms.ComboBox cmbPrd_Code;
+        private System.Windows.Forms.TextBox txbKOMISYON_AMOUNT;
+        private System.Windows.Forms.ComboBox cmbWhoSaller;
+        private System.Windows.Forms.TextBox txbWHOSE_COSTUMER;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txbCUS_EXPENSE;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txbSALES_PIECES;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txbKK_KOMISYON;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txbPAYED_TYPE;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txbPAYMENT;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbCategory;
     }
 }

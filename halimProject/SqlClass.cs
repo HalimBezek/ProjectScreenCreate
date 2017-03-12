@@ -72,12 +72,12 @@ namespace halimProject
         }
 
 
-       public void AddCarpet(int Category,String Name,String Pieces,String Degree,String Code)
+       public void AddCarpet(int Category_ıd,String Name,String Pieces,String Degree,String Code)
        {
            ConnectSql();
-           baglanti.Open();
-           string sql = null;  //="INSERT INTO carpet_list (NAME, SURNAME, DEPARTMAN_NAME, TITLE, START_DATE) VALUES ('" + tbName + "','" + tbSurname +
-           //                                   "','" + tbDepartment + "','" + tbDegree + "','" + dtStartDate + "')";
+           baglanti.Open();  //`ID`, `NAME`, `CT_ID`, `SIZE`, `PRODUCT_CODE`, `PIECES`
+           string sql = "INSERT INTO product_list ( NAME, CT_ID, SIZE, PRODUCT_CODE, PIECES) VALUES ('" + Name + "','" + Category_ıd +
+                                                      "','" + Degree + "','" + Code + "','" + Pieces + "')";
 
 
            MySqlCommand komut = new MySqlCommand();
@@ -96,9 +96,9 @@ namespace halimProject
            ConnectSql();
 
            baglanti.Open();
-           String Sql= null;
+           String Sql = "INSERT INTO  category_list (NAME) VALUES ('" + CategoryName + "')";
 
-           MySqlCommand komut = new MySqlCommand();
+           MySqlCommand komut = new MySqlCommand(Sql, baglanti);
 
            komut.CommandText = Sql;
            komut.Connection = baglanti;
@@ -106,6 +106,29 @@ namespace halimProject
            komut.ExecuteNonQuery();
            baglanti.Close();
         
+       }
+
+       public void AddSale(int Category_ıd, String Prd_Code, String WhoSaller, String WHOSE_COSTUMER, String PAYED_TYPE,
+                  String KK_KOMISYON, String SALES_PIECES, String SALE_PRICE, String KOMISYON_AMOUNT, String CUS_EXPENSE, String CARGO_PRICE, String PAYMENT)
+       {
+           ConnectSql();
+
+           baglanti.Open();
+           //sales_list`(`ID`, `CT_ID`, `PRD_CODE`, `WHO_SELL`, `WHOSE_COSTUMER`, `PAYED_TYPE`, `KK_KOMISYON`,
+           //`SALES_PIECES`, `SALE_PRICE`, `KOMISYON_AMOUNT`, `CUS_EXPENSE`, `CARGO_PRICE`, `PAYMENT`)
+           String Sql = "INSERT INTO  sales_list (CT_ID,PRD_CODE,WHO_SELL,WHOSE_COSTUMER,PAYED_TYPE,KK_KOMISYON,SALES_PIECES,SALE_PRICE,KOMISYON_AMOUNT,"
+                           + "CUS_EXPENSE,CARGO_PRICE,PAYMENT, COUNTRY_ID,PR_ID,CTIME)" + "VALUES ('" + Category_ıd + "','" + Prd_Code +
+                            "','" + WhoSaller + "','" + WHOSE_COSTUMER + "','" + PAYED_TYPE + "','" + KK_KOMISYON + "','" + SALES_PIECES +
+                            "','" + SALE_PRICE + "','" + KOMISYON_AMOUNT + "','" + CUS_EXPENSE + "','" + CARGO_PRICE + "','" + PAYMENT + "','" + 1 + "','" + 1 + "','" + DateTime.Now.Date+ "')";
+
+           MySqlCommand komut = new MySqlCommand(Sql, baglanti);
+
+           komut.CommandText = Sql;
+           komut.Connection = baglanti;
+
+           komut.ExecuteNonQuery();
+           baglanti.Close();
+
        }
 
 

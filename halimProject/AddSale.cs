@@ -22,5 +22,13 @@ namespace halimProject
             Close();
         }
 
+        private void btnAddSale_Click(object sender, EventArgs e)
+        {
+            SqlClass sqlConn = new SqlClass();
+           
+            sqlConn.AddSale(cmbCategory.TabIndex, cmbPrd_Code.Text, cmbWhoSaller.Text, txbWHOSE_COSTUMER.Text, txbPAYED_TYPE.Text,
+                  txbKK_KOMISYON.Text, txbSALES_PIECES.Text, txbSALE_PRICE.Text, txbKOMISYON_AMOUNT.Text, txbCUS_EXPENSE.Text, txbCARGO_PRICE.Text, txbPAYMENT.Text);
+        }
+
     }
 }
