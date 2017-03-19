@@ -24,10 +24,16 @@ namespace halimProject
             PersonalList pl = new PersonalList();
              
             pl.Show();
-
+           
             timer1.Enabled = false;
-            en.Close();  
+            en.Close();
+            button1_Click(sender, e);
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+           Close();
         }
     }
 }
