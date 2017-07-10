@@ -75,6 +75,7 @@
             this.Name = "Entries";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entries";
+            this.Load += new System.EventHandler(this.Entries_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

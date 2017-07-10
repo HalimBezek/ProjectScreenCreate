@@ -27,13 +27,18 @@ namespace halimProject
            
             timer1.Enabled = false;
             en.Close();
-            button1_Click(sender, e);
+            //button1_Click(sender, e);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
            Close();
+        }
+
+        private void Entries_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

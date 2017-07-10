@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.gbAddNewRecods = new System.Windows.Forms.GroupBox();
+            this.beWhoSaller = new DevExpress.XtraEditors.ButtonEdit();
+            this.bePrd_Code = new DevExpress.XtraEditors.ButtonEdit();
+            this.beCategory = new DevExpress.XtraEditors.ButtonEdit();
             this.label12 = new System.Windows.Forms.Label();
-            this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txbKK_KOMISYON = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -49,19 +51,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txbCARGO_PRICE = new System.Windows.Forms.TextBox();
             this.txbSALE_PRICE = new System.Windows.Forms.TextBox();
-            this.cmbPrd_Code = new System.Windows.Forms.ComboBox();
             this.txbKOMISYON_AMOUNT = new System.Windows.Forms.TextBox();
-            this.cmbWhoSaller = new System.Windows.Forms.ComboBox();
             this.txbWHOSE_COSTUMER = new System.Windows.Forms.TextBox();
             this.btnAddSale = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.labelKayit = new System.Windows.Forms.Label();
             this.gbAddNewRecods.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.beWhoSaller.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bePrd_Code.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beCategory.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gbAddNewRecods
             // 
+            this.gbAddNewRecods.Controls.Add(this.beWhoSaller);
+            this.gbAddNewRecods.Controls.Add(this.bePrd_Code);
+            this.gbAddNewRecods.Controls.Add(this.beCategory);
             this.gbAddNewRecods.Controls.Add(this.label12);
-            this.gbAddNewRecods.Controls.Add(this.cmbCategory);
             this.gbAddNewRecods.Controls.Add(this.label11);
             this.gbAddNewRecods.Controls.Add(this.txbKK_KOMISYON);
             this.gbAddNewRecods.Controls.Add(this.label10);
@@ -80,9 +86,7 @@
             this.gbAddNewRecods.Controls.Add(this.label3);
             this.gbAddNewRecods.Controls.Add(this.txbCARGO_PRICE);
             this.gbAddNewRecods.Controls.Add(this.txbSALE_PRICE);
-            this.gbAddNewRecods.Controls.Add(this.cmbPrd_Code);
             this.gbAddNewRecods.Controls.Add(this.txbKOMISYON_AMOUNT);
-            this.gbAddNewRecods.Controls.Add(this.cmbWhoSaller);
             this.gbAddNewRecods.Controls.Add(this.txbWHOSE_COSTUMER);
             this.gbAddNewRecods.Location = new System.Drawing.Point(12, 21);
             this.gbAddNewRecods.Name = "gbAddNewRecods";
@@ -90,6 +94,36 @@
             this.gbAddNewRecods.TabIndex = 23;
             this.gbAddNewRecods.TabStop = false;
             this.gbAddNewRecods.Text = "Yeni Satış Ekle";
+            // 
+            // beWhoSaller
+            // 
+            this.beWhoSaller.Location = new System.Drawing.Point(172, 56);
+            this.beWhoSaller.Name = "beWhoSaller";
+            this.beWhoSaller.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.beWhoSaller.Size = new System.Drawing.Size(126, 20);
+            this.beWhoSaller.TabIndex = 43;
+            this.beWhoSaller.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beWhoSaller_ButtonClick);
+            // 
+            // bePrd_Code
+            // 
+            this.bePrd_Code.Location = new System.Drawing.Point(16, 128);
+            this.bePrd_Code.Name = "bePrd_Code";
+            this.bePrd_Code.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.bePrd_Code.Size = new System.Drawing.Size(126, 20);
+            this.bePrd_Code.TabIndex = 42;
+            this.bePrd_Code.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.bePrd_Code_ButtonClick);
+            // 
+            // beCategory
+            // 
+            this.beCategory.Location = new System.Drawing.Point(16, 56);
+            this.beCategory.Name = "beCategory";
+            this.beCategory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.beCategory.Size = new System.Drawing.Size(126, 20);
+            this.beCategory.TabIndex = 41;
+            this.beCategory.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beCategory_ButtonClick);
             // 
             // label12
             // 
@@ -99,18 +133,6 @@
             this.label12.Size = new System.Drawing.Size(80, 13);
             this.label12.TabIndex = 40;
             this.label12.Text = "Kategori Seç   :";
-            // 
-            // cmbCategory
-            // 
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Items.AddRange(new object[] {
-            "hjklş",
-            "jklş",
-            "bnkl"});
-            this.cmbCategory.Location = new System.Drawing.Point(16, 60);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(126, 21);
-            this.cmbCategory.TabIndex = 1;
             // 
             // label11
             // 
@@ -127,6 +149,7 @@
             this.txbKK_KOMISYON.Name = "txbKK_KOMISYON";
             this.txbKK_KOMISYON.Size = new System.Drawing.Size(126, 20);
             this.txbKK_KOMISYON.TabIndex = 37;
+            this.txbKK_KOMISYON.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbKK_KOMISYON_KeyPress);
             // 
             // label10
             // 
@@ -159,6 +182,7 @@
             this.txbPAYMENT.Name = "txbPAYMENT";
             this.txbPAYMENT.Size = new System.Drawing.Size(126, 20);
             this.txbPAYMENT.TabIndex = 33;
+            this.txbPAYMENT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbKK_KOMISYON_KeyPress);
             // 
             // label8
             // 
@@ -175,6 +199,7 @@
             this.txbCUS_EXPENSE.Name = "txbCUS_EXPENSE";
             this.txbCUS_EXPENSE.Size = new System.Drawing.Size(126, 20);
             this.txbCUS_EXPENSE.TabIndex = 31;
+            this.txbCUS_EXPENSE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbKK_KOMISYON_KeyPress);
             // 
             // label7
             // 
@@ -191,6 +216,8 @@
             this.txbSALES_PIECES.Name = "txbSALES_PIECES";
             this.txbSALES_PIECES.Size = new System.Drawing.Size(126, 20);
             this.txbSALES_PIECES.TabIndex = 29;
+            this.txbSALES_PIECES.TextChanged += new System.EventHandler(this.txbSALES_PIECES_TextChanged);
+            this.txbSALES_PIECES.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSALES_PIECES_KeyPress);
             // 
             // label6
             // 
@@ -206,9 +233,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(13, 97);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 13);
+            this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Ürün Kodu       :";
+            this.label5.Text = "Ürün Adı       :";
             // 
             // label4
             // 
@@ -252,6 +279,7 @@
             this.txbCARGO_PRICE.Name = "txbCARGO_PRICE";
             this.txbCARGO_PRICE.Size = new System.Drawing.Size(126, 20);
             this.txbCARGO_PRICE.TabIndex = 22;
+            this.txbCARGO_PRICE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbKK_KOMISYON_KeyPress);
             // 
             // txbSALE_PRICE
             // 
@@ -259,18 +287,7 @@
             this.txbSALE_PRICE.Name = "txbSALE_PRICE";
             this.txbSALE_PRICE.Size = new System.Drawing.Size(126, 20);
             this.txbSALE_PRICE.TabIndex = 19;
-            // 
-            // cmbPrd_Code
-            // 
-            this.cmbPrd_Code.FormattingEnabled = true;
-            this.cmbPrd_Code.Items.AddRange(new object[] {
-            "hjklş",
-            "jklş",
-            "bnkl"});
-            this.cmbPrd_Code.Location = new System.Drawing.Point(16, 130);
-            this.cmbPrd_Code.Name = "cmbPrd_Code";
-            this.cmbPrd_Code.Size = new System.Drawing.Size(126, 21);
-            this.cmbPrd_Code.TabIndex = 17;
+            this.txbSALE_PRICE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbKK_KOMISYON_KeyPress);
             // 
             // txbKOMISYON_AMOUNT
             // 
@@ -278,18 +295,7 @@
             this.txbKOMISYON_AMOUNT.Name = "txbKOMISYON_AMOUNT";
             this.txbKOMISYON_AMOUNT.Size = new System.Drawing.Size(126, 20);
             this.txbKOMISYON_AMOUNT.TabIndex = 21;
-            // 
-            // cmbWhoSaller
-            // 
-            this.cmbWhoSaller.FormattingEnabled = true;
-            this.cmbWhoSaller.Items.AddRange(new object[] {
-            "hjklş",
-            "jklş",
-            "bnkl"});
-            this.cmbWhoSaller.Location = new System.Drawing.Point(172, 59);
-            this.cmbWhoSaller.Name = "cmbWhoSaller";
-            this.cmbWhoSaller.Size = new System.Drawing.Size(126, 21);
-            this.cmbWhoSaller.TabIndex = 15;
+            this.txbKOMISYON_AMOUNT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbKK_KOMISYON_KeyPress);
             // 
             // txbWHOSE_COSTUMER
             // 
@@ -297,10 +303,11 @@
             this.txbWHOSE_COSTUMER.Name = "txbWHOSE_COSTUMER";
             this.txbWHOSE_COSTUMER.Size = new System.Drawing.Size(126, 20);
             this.txbWHOSE_COSTUMER.TabIndex = 20;
+            this.txbWHOSE_COSTUMER.TextChanged += new System.EventHandler(this.txbWHOSE_COSTUMER_TextChanged);
             // 
             // btnAddSale
             // 
-            this.btnAddSale.Location = new System.Drawing.Point(544, 379);
+            this.btnAddSale.Location = new System.Drawing.Point(451, 379);
             this.btnAddSale.Name = "btnAddSale";
             this.btnAddSale.Size = new System.Drawing.Size(72, 44);
             this.btnAddSale.TabIndex = 23;
@@ -310,28 +317,45 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(455, 379);
+            this.btnCancel.Location = new System.Drawing.Point(539, 379);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(72, 44);
             this.btnCancel.TabIndex = 29;
-            this.btnCancel.Text = "İptal";
+            this.btnCancel.Text = "Kapat";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // labelKayit
+            // 
+            this.labelKayit.AutoSize = true;
+            this.labelKayit.Location = new System.Drawing.Point(454, 363);
+            this.labelKayit.Name = "labelKayit";
+            this.labelKayit.Size = new System.Drawing.Size(64, 13);
+            this.labelKayit.TabIndex = 35;
+            this.labelKayit.Text = "Kayıt Yapıldı";
+            this.labelKayit.Visible = false;
             // 
             // AddSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(644, 435);
+            this.ClientSize = new System.Drawing.Size(647, 435);
+            this.Controls.Add(this.labelKayit);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAddSale);
             this.Controls.Add(this.gbAddNewRecods);
             this.Name = "AddSale";
             this.Text = "Satış Ekle";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.AddSale_Load);
             this.gbAddNewRecods.ResumeLayout(false);
             this.gbAddNewRecods.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.beWhoSaller.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bePrd_Code.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beCategory.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -341,9 +365,7 @@
         private System.Windows.Forms.Button btnAddSale;
         private System.Windows.Forms.TextBox txbCARGO_PRICE;
         private System.Windows.Forms.TextBox txbSALE_PRICE;
-        private System.Windows.Forms.ComboBox cmbPrd_Code;
         private System.Windows.Forms.TextBox txbKOMISYON_AMOUNT;
-        private System.Windows.Forms.ComboBox cmbWhoSaller;
         private System.Windows.Forms.TextBox txbWHOSE_COSTUMER;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -363,6 +385,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txbPAYMENT;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.Label labelKayit;
+        private DevExpress.XtraEditors.ButtonEdit beCategory;
+        private DevExpress.XtraEditors.ButtonEdit beWhoSaller;
+        private DevExpress.XtraEditors.ButtonEdit bePrd_Code;
     }
 }

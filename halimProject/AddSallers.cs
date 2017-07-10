@@ -29,8 +29,26 @@ namespace halimProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlClass sqlConn = new SqlClass();
-            sqlConn.AddSallers(tbName.Text, tbSurname.Text, tbDepartment.Text, tbDegree.Text, dtStartDate.Text.ToString());
+            try
+            {
+                SqlClass sqlConn = new SqlClass();
+                sqlConn.AddSallers(tbName.Text, tbSurname.Text, tbDepartment.Text, tbDegree.Text);
+            }
+            finally
+            {
+                tbDegree.Text = "";
+                tbDepartment.Text = "";
+                tbName.Text = "";
+                tbSurname.Text = "";
+
+                labelKayit.Visible = true;
+            }
         }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+            labelKayit.Visible = false;
+        }
+
     }
 }
